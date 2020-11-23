@@ -288,13 +288,12 @@
                         },
                         cache: false,
                         success: function (data) {
-                            
                         },
                         error: function (jqXHR, status, err) {
                             // body...
                         },
                         complete: function () {
-                            // body...
+                            scrollToBottom();
                         }
                     });
                }
@@ -302,9 +301,10 @@
        });
 
        function scrollToBottom() {
-           $('.message-wrapper').animate({
-            scrollTop: $('.message-wrapper').get(0).scrollHeight
-           }, 50);
+           $(".messages").animate(
+            { 
+                scrollTop: $('.messages').prop("scrollHeight")
+            }, 50);
        }
    </script>
 </body>
