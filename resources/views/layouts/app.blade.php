@@ -293,7 +293,7 @@
                             // body...
                         },
                         complete: function () {
-                            scrollToBottom();
+                            // scrollToBottom();
                         }
                     });
                }
